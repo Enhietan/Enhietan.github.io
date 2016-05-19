@@ -1,63 +1,86 @@
 <html>
-	<head>
-	<!-- Bootstrap Core CSS -->
-	<link href="../css/bootstrap.min.css" rel="stylesheet">
-	 <!-- Custom CSS -->
-	<link href="../css/toggle-sidebar.css" rel="stylesheet">
-	</head>
-		  <body>
-			  <script>
-				  function toNum(n){
-					  return parseInt(n);
-				  }
-				  function add(n1, n2){
-					  sum=toNum(n1) + toNum(n2);
-					output(sum);
-				  }
-				  function subtract(n1 , n2) {
-					  difference=toNum(n1) - toNum(b2);
-					output(difference;)
-				  }
-				  function multiply(n1 , n2) {
-					  product=toNum(n1) * toNum(b2);
-					output(product;)
-				  }
-				  function divide(n1 , n2) {
-					  quotient=toNum(n1) / toNum(b2);
-					output(quotient;)
-				  }
-				  
-				  function output(res){
-					  alert(res);
-				  }
-				  
-			  </script>
-			  
-			  <div class="container">
-			  <div class="row">
-				<div class="col-md-6">
-			  <form name="calc">
-				  Num1: <input type="text" id="num1"><br>
-				  Num2: <input type="text" id="num2"><br>
-			  </form>
-			  </div>
-			  <br>
-			  <div class ="col-md-6">
-			 
-			<button onclick="add(document.querySelector('#num1').value, document.querySelector('#num2').value)">Add</button>
-			<button onclick="subtract(document.querySelector('#num1').value, document.querySelector('#num2').value)">Subtract</button>
-			</div>
-			<br>
-			<div class ="col-md-6">
-			<button onclick="multiply(document.querySelector('#num1').value, document.querySelector('#num2').value)">Multiply</button>
-			<button onclick="divide(document.querySelector('#num1').value, document.querySelector('#num2').value)">Divide</button>
-			
-			</div>
-			</div>
-			
-			<!-- jQuery -->
-		<script src="../js/jquery.js"></script>
-		<!-- Bootstrap Core JavaScript -->
-		<script src="../js/bootstrap.min.js"></script>
-		  </body>
+<head>
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<link href="../../css/toggle-sidebar.css" rel="stylesheet">
+</head>
+  <body>
+     <style>
+        *{
+          width: 100%;
+        }
+      </style>
+      <script>
+          function toNum(n){
+              return parseInt(n);
+          }
+          function add(n1, n2){
+              sum=toNum(n1) + toNum(n2);
+            output(sum);
+          }
+		    function multiply(n1, n2){
+              sum=toNum(n1) * toNum(n2);
+            output(sum);
+          }
+		      function subtract(n1, n2){
+              sum=toNum(n1) - toNum(n2);
+            output(sum);
+          }
+		      function divide(n1, n2){
+              sum=toNum(n1) / toNum(n2);
+            output(sum);
+          }
+          function output(res){
+              alert(res);
+          }
+      </script>
+  
+	  <div class="container">
+    <div class="row">
+        <div class="col-md-3" >
+	
+             Num1: 
+        </div>
+		   <div class="col-md-9" >
+			     <input type="text" id="num1">
+        </div>
+	</div>
+	<br>
+	    <div class="row">
+        <div class="col-md-3" >
+	
+             Num2: 
+        </div>
+		   <div class="col-md-9" >
+			     <input type="text" id="num1">
+        </div>
+	</div>
+	<br>
+	 <div class="row">
+    <div class="col-md-6">
+	
+
+	<button onclick="add(document.querySelector('#num1').value, document.querySelector('#num2').value)" class="btn btn-primary">Add</button>
+     </div>
+	    <div class="col-md-6">
+	 	<button onclick="subtract(document.querySelector('#num1').value, document.querySelector('#num2').value)" class="btn btn-primary" >Subtract</button>
+	</div>
+	</div>
+	<br>
+	 <div class="row">
+    <div class="col-md-6">
+	<button onclick="divide(document.querySelector('#num1').value, document.querySelector('#num2').value)" class="btn btn-primary" >Divide</button>
+     </div>
+	    <div class="col-md-6">
+	 	<button onclick="multiply(document.querySelector('#num1').value, document.querySelector('#num2').value)" class="btn btn-primary">Multiply</button>
+		</div>
+	</div>
+    </div>
+</div>
+
+	 
+<!-- jQuery -->
+<script type='text/javascript'src="../../js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script type='text/javascript' src="../../js/bootstrap.min.js"></script>
+  </body>
 </html>
